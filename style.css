@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+header {
+  background: black;
+  padding: 15px 0;
+}
+nav,
+.account-content {
+  display: flex;
+  gap: 100px;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  color: #fff;
+  font-size: 3rem;
+  font-weight: bold;
+}
+.logo .Shop {
+  /* color: orange; */
+  color: #0ef;
+}
+.search input {
+  padding: 10px 40px;
+  border: none;
+}
+
+.search input:focus {
+  outline: none;
+}
+.search {
+  padding: 3px 20px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  width: 300px;
+  border-radius: 25px;
+}
+.account a,
+.item a {
+  text-decoration: none;
+  color: #fff;
+}
+.account,
+.item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.account i,
+.item i {
+  color: #0ef;
+  font-size: 20px;
+}
+img {
+  width: 100%;
+}
+/* mobile-brand */
+.monile-brand {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.mobile-content {
+  display: grid;
+  gap: 15px;
+  grid-template-columns: repeat(8, 1fr);
+}
+.monile-brand h3 {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+.mobile_brand_child {
+  background-color: #fff;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 8px;
+  padding: 20px;
+}
+.mobile_brand_child p {
+  text-align: center;
+  color: #494747;
+  transition: 0.5s;
+}
+.mobile_brand_child p:hover {
+  color: #0ef;
+}
+/* Out_Category */
+.Out_Category h3 {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 40px;
+}
+.category-parent {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(5, 1fr);
+}
+.child-category img {
+  width: 50px;
+  height: 50px;
+}
+.child-category img:hover {
+  background: linear-gradient(top to right, #0ef, #0ef);
+}
+
+.child-category a:hover {
+  color: #0ef;
+}
+.child-category a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.5rem;
+  transition: 0.5s;
+}
+.child-category {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 8px;
+}
+.child-category a {
+  text-decoration: none;
+  text-align: center;
+}
+@media screen and (max-width: 576px) {
+  .logo {
+    font-size: 2rem;
+  }
+  .search {
+    display: none;
+  }
+
+  nav,
+  .account-content {
+    gap: 10px;
+  }
+  .item {
+    display: none;
+  }
+  .Out_Category h3 {
+    font-size: 2rem;
+  }
+  .category-parent {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .child-category a {
+    font-size: 1rem;
+  }
+  .monile-brand h3 {
+    font-size: 2rem;
+  }
+  .mobile-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
