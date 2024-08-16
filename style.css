@@ -29,8 +29,7 @@ nav,
   font-weight: bold;
 }
 .logo .Shop {
-  /* color: orange; */
-  color: #0ef;
+  color: #f3096b;
 }
 .search input {
   padding: 10px 40px;
@@ -62,7 +61,8 @@ nav,
 }
 .account i,
 .item i {
-  color: #0ef;
+  color: #f3096b;
+
   font-size: 20px;
 }
 img {
@@ -90,7 +90,7 @@ img {
   transition: 0.5s;
 }
 .profile_icon i:hover {
-  color: #0ef;
+  color: #f3096b;
 }
 .account_profile a {
   color: #494747;
@@ -113,6 +113,31 @@ img {
 }
 .hidden {
   visibility: hidden;
+}
+
+/* service */
+.service {
+  margin-top: 50px;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+}
+.service_child {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: #fff;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 8px;
+  padding: 20px;
+}
+.service_child p:hover {
+  color: #f3096b;
+}
+.service_child img {
+  width: 50px;
+  height: 50px;
 }
 /* mobile-brand */
 .monile-brand {
@@ -141,7 +166,7 @@ img {
   transition: 0.5s;
 }
 .mobile_brand_child p:hover {
-  color: #0ef;
+  color: #f3096b;
 }
 /* Out_Category */
 .Out_Category h3 {
@@ -158,12 +183,9 @@ img {
   width: 50px;
   height: 50px;
 }
-.child-category img:hover {
-  background: linear-gradient(top to right, #0ef, #0ef);
-}
 
 .child-category a:hover {
-  color: #0ef;
+  color: #f3096b;
 }
 .child-category a {
   text-decoration: none;
@@ -217,7 +239,7 @@ img {
 }
 .latest_phone_child a:hover,
 .latest_phone_child p:hover {
-  color: rgb(75, 175, 182);
+  color: #f3096b;
 }
 .buy_btn {
   text-transform: uppercase;
@@ -233,8 +255,8 @@ img {
   cursor: pointer;
 }
 .buy_btn:hover {
-  color: #494747;
-  background-color: #0ef;
+  background-color: #f3096b;
+  color: #ffffff;
 }
 /* laptop_collection */
 .laptop_collection h3 {
@@ -276,11 +298,12 @@ footer {
 .logo p {
   font-size: 1rem;
   font-weight: 400;
-  color: #0ef;
+  color: #f3096b;
 }
 .important_link a {
   text-decoration: none;
-  color: #0ef;
+  color: #f3096b;
+
   font-size: 0.8rem;
   display: block;
   margin-top: 10px;
@@ -304,12 +327,13 @@ footer {
 }
 .support .phone:hover,
 .support .location:hover {
-  border-color: #0ef;
-  color: #0ef;
+  border-color: #f3096b;
+  color: #f3096b;
 }
 .social-media i {
   margin: 10px;
-  color: #0ef;
+  color: #f3096b;
+
   font-size: 25px;
   cursor: pointer;
 }
@@ -319,10 +343,12 @@ footer {
 }
 .coppy_right p {
   padding: 20px;
-  color: #0ef;
+  color: #f3096b;
+
   text-align: center;
   font-size: 0.8rem;
 }
+
 @media screen and (max-width: 576px) {
   .logo {
     font-size: 2rem;
@@ -330,7 +356,9 @@ footer {
   .search {
     display: none;
   }
-
+  .service {
+    grid-template-columns: repeat(1, 1fr);
+  }
   nav,
   .account-content {
     gap: 10px;
@@ -373,6 +401,60 @@ footer {
     width: 90%;
     margin: 0 auto;
     grid-template-columns: repeat(1, 1fr);
+  }
+  .latest_phone h3,
+  .laptop_collection h3 {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 992px) {
+  .logo {
+    font-size: 2rem;
+  }
+  .search {
+    display: none;
+  }
+
+  nav,
+  .account-content {
+    gap: 10px;
+  }
+
+  .item {
+    display: none;
+  }
+  .Out_Category h3 {
+    font-size: 2rem;
+  }
+  .service {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .category-parent {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .child-category a {
+    font-size: 1rem;
+  }
+  .monile-brand h3 {
+    font-size: 2rem;
+  }
+  .mobile-content {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .account_profile {
+    top: 30px;
+    right: 1px;
+  }
+
+  .support {
+    text-align: center;
+  }
+  .latest_phone_parent,
+  .laptop_collection_parent {
+    width: 90%;
+    margin: 0 auto;
+    grid-template-columns: repeat(2, 1fr);
   }
   .latest_phone h3,
   .laptop_collection h3 {
