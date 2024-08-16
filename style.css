@@ -68,6 +68,52 @@ nav,
 img {
   width: 100%;
 }
+.account {
+  position: relative;
+}
+.account_profile {
+  padding: 20px;
+  position: absolute;
+  background-color: #fff;
+  width: 200px;
+  height: 200px;
+  top: 30px;
+  right: -100px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.profile_icon i {
+  margin: 4px;
+  color: #494747;
+  transition: 0.5s;
+}
+.profile_icon i:hover {
+  color: #0ef;
+}
+.account_profile a {
+  color: #494747;
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+.account_profile img {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+.account_profile .name {
+  margin-top: 6px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.account_profile .email {
+  color: #494747;
+}
+.hidden {
+  visibility: hidden;
+}
 /* mobile-brand */
 .monile-brand {
   margin-top: 50px;
@@ -167,5 +213,9 @@ img {
   }
   .mobile-content {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .account_profile {
+    top: 30px;
+    right: 1px;
   }
 }
