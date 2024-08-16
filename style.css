@@ -236,6 +236,37 @@ img {
   color: #494747;
   background-color: #0ef;
 }
+/* laptop_collection */
+.laptop_collection h3 {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  font-size: 3rem;
+  text-align: center;
+}
+.laptop_collection_parent {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+}
+.laptop_collection_child {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  background: #fff;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 8px;
+}
+.laptop_collection_child img {
+  width: 200px;
+  height: 200px;
+}
+.laptop_collection_child a,
+.laptop_collection_child p {
+  text-decoration: none;
+  color: #494747;
+  font-size: 1.2rem;
+}
 /* footer */
 footer {
   margin-top: 50px;
@@ -337,12 +368,14 @@ footer {
   .support {
     text-align: center;
   }
-  .latest_phone_parent {
+  .latest_phone_parent,
+  .laptop_collection_parent {
     width: 90%;
     margin: 0 auto;
     grid-template-columns: repeat(1, 1fr);
   }
-  .latest_phone h3 {
+  .latest_phone h3,
+  .laptop_collection h3 {
     font-size: 2rem;
   }
 }
