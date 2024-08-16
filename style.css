@@ -184,6 +184,62 @@ img {
   text-decoration: none;
   text-align: center;
 }
+/* footer */
+footer {
+  margin-top: 50px;
+  background: #000;
+  padding-top: 50px;
+}
+.logo p {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #0ef;
+}
+.important_link a {
+  text-decoration: none;
+  color: #0ef;
+  font-size: 0.8rem;
+  display: block;
+  margin-top: 10px;
+  font-weight: 300;
+}
+.support p {
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 2rem;
+}
+.support .phone,
+.support .location {
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 15px;
+  border-radius: 50px;
+  margin-bottom: 10px;
+  transition: 0.5s;
+}
+.support .phone:hover,
+.support .location:hover {
+  border-color: #0ef;
+  color: #0ef;
+}
+.social-media i {
+  margin: 10px;
+  color: #0ef;
+  font-size: 25px;
+  cursor: pointer;
+}
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+}
+.coppy_right p {
+  padding: 20px;
+  color: #0ef;
+  text-align: center;
+  font-size: 0.8rem;
+}
 @media screen and (max-width: 576px) {
   .logo {
     font-size: 2rem;
@@ -217,5 +273,16 @@ img {
   .account_profile {
     top: 30px;
     right: 1px;
+  }
+  .footer-content {
+    gap: 20px;
+    flex-direction: column;
+  }
+  .social-media {
+    display: flex;
+    justify-content: center;
+  }
+  .support {
+    text-align: center;
   }
 }
